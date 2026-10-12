@@ -24,7 +24,7 @@ for num in Numbers :
 current = head 
 
 while current :
-    print(current.data) 
+    print(current.data , end=" → ") 
     current = current.next 
 
 print("------- Linked List To List -------")
