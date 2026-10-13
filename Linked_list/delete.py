@@ -78,4 +78,4 @@ head.next.next.next = Node(40)
 
 print("")
 
-delete_specific_pos(head , 1)
+delete_from_end(head)
