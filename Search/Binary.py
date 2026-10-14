@@ -1,5 +1,5 @@
 nums = [10,20,30,40,50,60,70]
-target = 50
+target = 10
 
 low = 0 
 high = len(nums) - 1
