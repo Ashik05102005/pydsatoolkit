@@ -7,10 +7,18 @@ class Node :
 
 def display_ll(head) :
     current = head 
+    print("--- forward ---")
     while current :
-        print(f"| {None if current.prev is None else  current.prev.data} | {current.data} | {None if current.next is None else current.next.data} |")
+        print(f"| {None if current.prev is None else  current.prev.data} | {current.data} | {None if current.next is None else current.next.data} |" ,end="->")
+        if current.next is None :
+            break
         current = current.next
-    print("\n----------------------------------\n")
+    print("\n--- backward ----\n")
+    while current :
+        print(f"| {None if current.prev is None else  current.prev.data} | {current.data} | {None if current.next is None else current.next.data} |" , end="<-")
+        current = current.prev
+
+    
 
 def delete_from_begin(head) :
     if head is None or head.next is None :
