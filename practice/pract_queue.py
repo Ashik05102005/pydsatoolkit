@@ -26,7 +26,7 @@ class Queue :
             self.rear = None
         return val
 
-    def peek():
+    def peek(self):
         if self.front is None :
             return" queue is empty"
         return self.front.data
@@ -53,5 +53,6 @@ queue.display()
 
 queue.enque(90)
 queue.display()
+
 
 
