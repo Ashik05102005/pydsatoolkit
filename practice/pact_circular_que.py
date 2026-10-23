@@ -28,7 +28,7 @@ class CircularQueue :
         if self.count == 0 :
             # print("queue is empty")
             return "queue is empty"
-        return self.queue[front]
+        return self.queue[self.front]
 
 queue = CircularQueue(5) 
 
